@@ -1,0 +1,133 @@
+// LISTADO SOCIOS
+#listado_socios{
+    border: solid 0px;
+    font-family: sans-serif;
+}
+
+  #listado_socios table{
+    background-color:#f2f2f2;
+    font-size: 18px;
+    height: 30em;
+    width: 100%;
+    // border: 1px solid black;
+}
+
+table{
+    // codigo para fijar el ancho de columna
+    // border: 1px solid black;
+    table-layout: fixed;
+    // width: 200px;
+    //HASTA AQUI
+    display:flex;
+    justify-content: flex-start;
+    flex-direction:column;
+}
+
+.tabla{
+    // background-color:purple;
+}
+
+tr {
+    display:flex;
+    // background-color: #8c0303;
+    flex-direction:row;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+//ESTO ES PARA DEJAR FIJO EL ANCHO DE LAS COLUMNAS; PORQUE SE ME DESCUADRABA AL TENER COLUMNAS CON CONTENIDO Y COLUMNAS VACIAS https://stackoverflow.com/questions/4457506/set-the-table-column-width-constant-regardless-of-the-amount-of-text-in-its-cell
+th,
+td {
+//   border: 1px solid black;
+  width: 100px;
+  overflow: hidden;
+}
+
+
+.nombres_columnas {border-bottom:1px dashed}
+
+.nombre{
+    width: 33%;
+}
+
+.numero_documento, .tipo_documento, .fecha_nacimiento{
+    // background-color: aquamarine;
+    width: 15%;
+}
+
+.editar, .borrar {
+    width: 11%; 
+}
+
+tr:nth-child(2n){
+        background-color: #FFFFFF;
+    }
+
+
+// BOTONES
+#listado_socios .botones{
+    // border: solid 1px;
+    background-color: #f2f2f2  ;
+    height: 10em;
+}
+
+.boton-registrar{
+    background-color: #8c0303;
+    color: #FFFFFF;
+}
+
+// paginacion
+.page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.page-link {
+    position: relative;
+    display: block;
+    padding: .5rem .75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #6c757d;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+}
+
+a {
+    color:#6c757d;
+    text-decoration: none;
+    background-color: #6c757d;
+}
+
+
+// HISTORICO PAGOS
+
+.subrayado {
+    border-bottom:1px solid;
+    border-top: 1px solid;
+}
+
+//RESULTADO pago
+.resultado_pago{
+    height:200%;
+}
+
+.numero_documento{
+    // background-color: #8c0303;
+    // color: green;
+}
+
+.nombre_pago{
+    width: 50%;
+}
+
+.n_pago{
+    width: 25%;
+}
+
+.pagado_pago{
+    width: 25%;
+}

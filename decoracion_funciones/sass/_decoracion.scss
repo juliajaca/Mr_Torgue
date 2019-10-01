@@ -1,0 +1,76 @@
+.pagina {
+    width: 100vw;
+    font-size: 10px;
+    height: 100vh;
+    background: LightGray;
+    display: grid;
+    grid-template-rows: 20fr 75fr 6fr;
+    font-family: sans-serif;
+}
+
+    .encabezado {
+        display: grid;
+        grid-template-columns: 43fr 41fr 1fr 15fr;
+    }
+
+        .d2{
+            background:#f2f2f2;
+            display:grid;
+            grid-template-columns: repeat(37, 1fr);
+            grid-template-rows: repeat(11, 1fr);
+            border:solid 1px;
+        }
+
+        .d1, .d3, .cuadro:nth-child(2n){
+            background-color: #515151;
+            display: grid;
+            justify-items: center;
+            border:solid 1px;
+        }
+
+        .logo{
+            justify-self: center;
+            height: 100%;
+            width: 50%;
+        }
+
+        .d4, div.cuadro.cuadro370, div.cuadro.cuadro296, div.cuadro.cuadro222, div.cuadro.cuadro148, div.cuadro.cuadro74, div.cuadro.cuadro332, div.cuadro.cuadro258, div.cuadro.cuadro184,div.cuadro.cuadro110,
+        div.cuadro.cuadro36,div.cuadro.cuadro294, div.cuadro.cuadro220, div.cuadro.cuadro146, div.cuadro.cuadro72,div.cuadro.cuadro34,div.cuadro.cuadro108, div.cuadro.cuadro70, div.cuadro.cuadro106, div.cuadro.cuadro32 {
+            background-color:#8c0303;
+            border:solid 1px;
+        }
+
+    .no_encabezado{
+        size: 18px;
+        background:#f2f2f2;
+        display:grid;
+        grid-template-columns: 3fr 81fr 3fr;
+        grid-template-rows: 100fr;
+        }
+
+            .lateral-izd, .lateral-dcho{
+                background:#f2f2f2;
+                display:grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(40, 1fr);
+            }
+
+    .base{
+        background:#f2f2f2;
+        display:grid;
+        grid-template-columns: repeat(87, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+
+.alerta{
+    position:fixed;
+    width:150px;
+    height:100px;
+    padding:2500px;
+    background-color:green;
+    color:#fff;
+    top:150px;
+    right: 150px;
+    float:right;
+    }

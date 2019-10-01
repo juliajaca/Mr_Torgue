@@ -1,0 +1,120 @@
+.index{
+    width: 100vw;
+    display:flex;
+    height: 100vh;
+    // background-color: aqua;
+}
+
+    .index_lateral{
+        // background-color: green;
+        width: 3.4%;
+        display:grid;
+        grid-template-columns: repeat(3, 5fr) ;
+        grid-template-rows: repeat(45, 3fr);
+    }
+
+        //   LOS CUADRADITPS  
+        .index_cuadro{
+            background:#f2f2f2;
+            border:solid 1px;
+        }
+
+        .index_cuadro:nth-child(2n){
+            background-color: #515151;
+            border:solid 1px;
+        }
+
+
+    .index_contenido{
+        // background-color: black;
+        width: 96.6%;
+    }
+
+        .index_contenido_titulo{
+            // background-color: antiquewhite;
+            height: 20%;
+            display:flex;
+            justify-content:center;
+            align-items: center;
+        }
+            .mr, .muscle{
+                font-size:64px;
+                font-family: sans-serif;
+            }
+
+            .index_contenido_titulo_logo{
+                height: 70%;
+                width: 80%;
+            }
+            
+            .index_contenido_titulo_logo_contenedor{
+                display:flex;
+                justify-content: center;
+            }
+         
+        .index_contenido_menu{
+            // background-color: beige;
+            height: 68%;
+            border: solid 1px;
+            margin: 50px;
+            padding: 50px;
+
+        }
+
+            .index_contenido_menu_contSocios{
+                // background-color: black;
+                height: 50%;
+            }
+
+                .index_contenido_menu_contSocios_titulo{
+                    // background-color: orange;
+                    height: 20%;
+                    font-size:24px;
+                }
+                
+                .index_contenido_menu_contSocios_botones{
+                    display:flex;
+                    justify-content: space-around;
+                    margin-top: 40px;   
+                }
+
+                .index_contenido_menu_contSocios_botones a{
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+            .index_contenido_menu_contPagos{
+                // background-color: white;
+                height: 50%;
+            }
+
+                .index_contenido_menu_contPagos_titulo{
+                    // background-color: orange;
+                    height: 20%;
+                    font-size:24px;
+                }
+                
+                .index_contenido_menu_contPagos_botones{
+                    display:flex;
+                    justify-content: space-around;
+                    margin-top: 40px;
+                }
+            
+                .index_contenido_menu_contPagos_botones a{
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+
+ // botones
+ .btn-index{
+     height: 75px;
+     width: 250px;
+ }
+
+ .btn-actualizar{
+     height: 50px;
+     width: 150px;
+ }
