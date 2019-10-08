@@ -123,18 +123,18 @@ class SocioController {
         return True;
     }
     
-    //CONSULTA DE SOCIOS
-    public function consultarSocios(){
-        $bdmysql = new Bdmysqli('localhost' , 'root', '', 'mrtorgue');
-        $bdmysql->abrirBD();
+    //CONSULTA DE SOCIOS YA NO HACE FALTA CON LA PAGINACION
+    // public function consultarSocios(){
+    //     $bdmysql = new Bdmysqli('localhost' , 'root', '', 'mrtorgue');
+    //     $bdmysql->abrirBD();
 
-        $leer = $bdmysql->query("SELECT * FROM socio 
-        WHERE activo = 1
-        ORDER BY apellido ASC, nombre ASC
-        ");
+    //     $leer = $bdmysql->query("SELECT * FROM socio 
+    //     WHERE activo = 1
+    //     ORDER BY apellido ASC, nombre ASC
+    //     ");
 
-        return $leer;
-    }
+    //     return $leer;
+    // }
 
 
     //BORRAR SOCIO

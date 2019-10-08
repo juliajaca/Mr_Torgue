@@ -1,3 +1,5 @@
+
+// TABLAS***************************************************************************************************************************************************************************************************************************************************************************************************************************************************
 // LISTADO SOCIOS
 #listado_socios{
     border: solid 0px;
@@ -21,17 +23,19 @@ table{
     display:flex;
     justify-content: flex-start;
     flex-direction:column;
+ 
+    margin-bottom: 1rem;
 }
 
-.tabla{
-    // background-color:purple;
+.table{
+    margin-bottom: 1rem;
 }
 
 tr {
     display:flex;
     // background-color: #8c0303;
     flex-direction:row;
-    height: 50px;
+    height: 33px;
     justify-content: center;
     align-items: center;
 }
@@ -39,25 +43,34 @@ tr {
 //ESTO ES PARA DEJAR FIJO EL ANCHO DE LAS COLUMNAS; PORQUE SE ME DESCUADRABA AL TENER COLUMNAS CON CONTENIDO Y COLUMNAS VACIAS https://stackoverflow.com/questions/4457506/set-the-table-column-width-constant-regardless-of-the-amount-of-text-in-its-cell
 th,
 td {
-//   border: 1px solid black;
-  width: 100px;
-  overflow: hidden;
+    width:100%;
+//   width: 100px;
+//   overflow: hidden;
 }
 
+//esto es que me salian unos bordes raros en las celdas y copie esto del insperctor. Son clases del boostrap
+.table-bordered {
+    border: 0px solid #dee2e6;
+}
 
+.table-bordered td, .table-bordered th {
+    border: 0px solid #dee2e6;
+}
+
+//////////////////////////
 .nombres_columnas {border-bottom:1px dashed}
 
 .nombre{
-    width: 33%;
+    width: 40%;
 }
 
 .numero_documento, .tipo_documento, .fecha_nacimiento{
     // background-color: aquamarine;
-    width: 15%;
+    width: 18%;
 }
 
 .editar, .borrar {
-    width: 11%; 
+    width: 9%; 
 }
 
 tr:nth-child(2n){
